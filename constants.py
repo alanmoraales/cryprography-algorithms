@@ -1,5 +1,6 @@
 ANONYMOUS_FILE_DIR = 'files/anonymous.txt'
 RUBIK_FILE_DIR = 'files/rubik.txt'
+BIG_FILE_DIR = 'files/my_first_calculator.py'
 AES_ENCRYPTED_OUTPUT = 'files/aes_encripted.txt'
 AES_ENCRYPTED_TIME = 'files/aes_time.txt'
 RSA_ENCRYPTED_OUTPUT = 'files/rsa_encripted.txt'
