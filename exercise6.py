@@ -1,14 +1,13 @@
 from constants import RSA_ENCRYPTED_OUTPUT, RSA_DECRYPTED_TIME, RSA_DECRYPTED_OUTPUT
-from algorithms.RSA import RSAAlgorithm
+from algorithms.RSA import RSA
 from file_writer import FileWriter
 
 
 def desencrypt_with_rsa():
-    rsa = RSAAlgorithm()
     FileWriter.transform_by_chunk(
         input_path=RSA_ENCRYPTED_OUTPUT,
         output_path=RSA_DECRYPTED_OUTPUT,
-        parse=rsa.desencrypt,
+        parse=RSA.desencrypt,
         chunk_size=256,
     )
 

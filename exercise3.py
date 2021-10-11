@@ -1,14 +1,13 @@
-from algorithms.RSA import RSAAlgorithm
+from algorithms.RSA import RSA
 from constants import RSA_ENCRYPTED_OUTPUT, BIG_FILE_DIR, RSA_ENCRYPTED_TIME
 from file_writer import FileWriter
 
 
 def encrypt_with_rsa():
-    rsa = RSAAlgorithm()
     FileWriter.transform_by_chunk(
         input_path=BIG_FILE_DIR,
         output_path=RSA_ENCRYPTED_OUTPUT,
-        parse=rsa.encrypt,
+        parse=RSA.encrypt,
         chunk_size=100,
     )
 
