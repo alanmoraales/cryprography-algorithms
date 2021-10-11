@@ -9,6 +9,7 @@ def desencrypt_with_rsa():
         input_path=RSA_ENCRYPTED_OUTPUT,
         output_path=RSA_DECRYPTED_OUTPUT,
         parse=rsa.desencrypt,
+        chunk_size=256,
     )
 
 

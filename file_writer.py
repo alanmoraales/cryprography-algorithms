@@ -3,7 +3,7 @@ import time
 
 class FileWriter:
     @staticmethod
-    def transform_by_chunk(input_path, output_path, parse, chunk_size=256):
+    def transform_by_chunk(input_path, output_path, parse, chunk_size):
         output_file = open(output_path, mode="wb")
 
         with open(input_path, "rb") as input_file:
